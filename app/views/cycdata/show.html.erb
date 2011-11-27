@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Part:</b>
+  <%= @cycdatum.part %>
+</p>
+
+<p>
+  <b>Measurement:</b>
+  <%= @cycdatum.measurement %>
+</p>
+
+<p>
+  <b>Unit:</b>
+  <%= @cycdatum.unit %>
+</p>
+
+<p>
+  <b>Value:</b>
+  <%= @cycdatum.value %>
+</p>
+
+<p>
+  <b>Ts:</b>
+  <%= @cycdatum.ts %>
+</p>
+
+
+<%= link_to 'Edit', edit_cycdatum_path(@cycdatum) %> |
+<%= link_to 'Back', cycdata_path %>

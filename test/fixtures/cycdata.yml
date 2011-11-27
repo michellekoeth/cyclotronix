@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  part: MyString
+  measurement: MyString
+  unit: MyString
+  value: 9.99
+  ts: 2011-11-27 13:55:25
+
+two:
+  part: MyString
+  measurement: MyString
+  unit: MyString
+  value: 9.99
+  ts: 2011-11-27 13:55:25

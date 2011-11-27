@@ -1,0 +1,31 @@
+<h1>Listing cycdata</h1>
+
+<table>
+  <tr>
+    <th>Part</th>
+    <th>Measurement</th>
+    <th>Unit</th>
+    <th>Value</th>
+    <th>Ts</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @cycdata.each do |cycdatum| %>
+  <tr>
+    <td><%= cycdatum.part %></td>
+    <td><%= cycdatum.measurement %></td>
+    <td><%= cycdatum.unit %></td>
+    <td><%= cycdatum.value %></td>
+    <td><%= cycdatum.ts %></td>
+    <td><%= link_to 'Show', cycdatum %></td>
+    <td><%= link_to 'Edit', edit_cycdatum_path(cycdatum) %></td>
+    <td><%= link_to 'Destroy', cycdatum, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Cycdatum', new_cycdatum_path %>
